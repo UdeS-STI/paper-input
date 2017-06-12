@@ -220,6 +220,11 @@ This element is `display:block` by default, but you can set the `inline` attribu
         @apply(--paper-input-container-label);
         @apply(--paper-transition-easing);
       }
+	  
+	  .input-content.label-is-floating ::content label .label-required,
+	    .input-content.label-is-floating ::content .paper-input-label .label-required {
+        color: var(--error-color);
+      }
 
       .input-content.label-is-floating ::content label,
       .input-content.label-is-floating ::content .paper-input-label {
